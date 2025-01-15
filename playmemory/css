@@ -1,0 +1,53 @@
+/* Allgemeines Styling */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f7f7f7;
+}
+
+/* Spielkarten */
+.button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #87ceeb; /* Hellblau */
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #4682b4; /* Dunkleres Blau bei Hover */
+}
+
+/* Menüblock */
+.menu {
+    -fx-background-color: #333333; /* Dunkelgrau */
+    -fx-padding: 10;
+    -fx-spacing: 20;
+    -fx-border-color: #555555;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.menu .label {
+    -fx-text-fill: white; /* Weißer Text im Menü */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Spieler- und Punktestände */
+.score-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.player-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #228b22; /* Dunkelgrün */
+    -fx-font-weight: bold;
+}
+
+/* Popup-Nachrichten */
+.dialog-pane {
+    -fx-background-color: #f0f0f0; /* Heller Hintergrund für Popups */
+    -fx-border-color: #cccccc;
+}
