@@ -1,0 +1,76 @@
+/* Hauptlayout */
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 10;
+}
+
+/* Menübereich */
+.menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+/* Labels für Spieler und Punktestand */
+.player-label, .score-label {
+    -fx-font-size: 14px; /* Schriftgröße verkleinern */
+    -fx-font-weight: bold; /* Fettgedruckt für bessere Lesbarkeit */
+    -fx-text-fill: #333333;
+}
+
+/* Zusatz für Zeilenumbrüche */
+.score-label {
+    -fx-line-spacing: 5px; /* Abstand zwischen Zeilen */
+}
+
+/* Buttons im Menü */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-border-color: #0056b3;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 10 20;
+}
+
+/* Stil für die Spielkarten */
+.game-card {
+    -fx-background-color: transparent; /* Kein Hintergrund */
+    -fx-border-color: transparent;    /* Kein Rand */
+    -fx-border-width: 0;              /* Keine Randbreite */
+    -fx-padding: 0;                   /* Keine zusätzliche Polsterung */
+    -fx-focus-color: transparent;     /* Entferne den blauen Fokus */
+    -fx-faint-focus-color: transparent; /* Entferne den schwachen Fokus */
+}
+
+/* Stil für die Karten, wenn sie den Fokus haben */
+.game-card:focused {
+    -fx-background-color: transparent; /* Kein Hintergrund bei Fokus */
+    -fx-border-color: transparent;    /* Kein Rand bei Fokus */
+}
+
+/* Kartenrückseite */
+.game-card.back {
+    -fx-background-color: transparent; /* Keine Hintergrundfarbe */
+    -fx-background-image: url("/com/example/playmemory/images/cardBack.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+/* Aufgedeckte Karten */
+.game-card.revealed {
+    -fx-background-color: transparent; /* Keine Hintergrundfarbe */
+    -fx-border-color: transparent;
+}
+
+/* Gewinneranzeige */
+.winner-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: green;
+}
